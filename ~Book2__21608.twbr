@@ -737,7 +737,27 @@
       </table>
       <simple-id uuid='{0D8A5354-4A79-4570-A52C-884663285B85}' />
     </worksheet>
-    <worksheet name='Start and End Station by Birth Year'>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{150EFE9D-DED9-4C38-AF6E-2C19EF264269}' />
+    </worksheet>
+    <worksheet name='Start and End Station by Birth Year-2013'>
       <table>
         <view>
           <datasources>
@@ -747,19 +767,18 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='federated.1wyyrio0r7zx9v178951i0xhitr7'>
-            <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
-            <column-instance column='[birth year]' derivation='None' name='[none:birth year:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[start station latitude]' derivation='None' name='[none:start station latitude:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[start station longitude]' derivation='None' name='[none:start station longitude:qk]' pivot='key' type='quantitative' />
-            <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
-            <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[end station longitude (201306-citibike-tripdata.csv)]' derivation='Avg' name='[avg:end station longitude (201306-citibike-tripdata.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station latitude (201306-citibike-tripdata.csv)]' derivation='Avg' name='[avg:start station latitude (201306-citibike-tripdata.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='Birth Year (201306-Citibike-Tripdata.Csv)' datatype='integer' name='[birth year (201306-citibike-tripdata.csv)]' role='dimension' type='quantitative' />
+            <column aggregation='Avg' caption='End Station Longitude (201306-Citibike-Tripdata.Csv)' datatype='real' name='[end station longitude (201306-citibike-tripdata.csv)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[birth year (201306-citibike-tripdata.csv)]' derivation='None' name='[none:birth year (201306-citibike-tripdata.csv):qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Latitude (201306-Citibike-Tripdata.Csv)' datatype='real' name='[start station latitude (201306-citibike-tripdata.csv)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:start station latitude:qk]' field-type='quantitative' max='4981290.6167674027' min='4963615.9338942152' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
-            <encoding attr='space' class='0' field='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:start station longitude:qk]' field-type='quantitative' max='-8218627.1930885175' min='-8248289.5648896089' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1wyyrio0r7zx9v178951i0xhitr7].[avg:start station latitude (201306-citibike-tripdata.csv):qk]' field-type='quantitative' max='4981531.2149367798' min='4964700.3393870536' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='table'>
             <format attr='band-size' scope='rows' value='5' />
@@ -769,18 +788,18 @@
           </style-rule>
         </style>
         <panes>
-          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:birth year:qk]' />
+              <color column='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:birth year (201306-citibike-tripdata.csv):qk]' />
             </encodings>
           </pane>
         </panes>
-        <rows>[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:start station latitude:qk]</rows>
-        <cols>[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:start station longitude:qk]</cols>
+        <rows>[federated.1wyyrio0r7zx9v178951i0xhitr7].[avg:start station latitude (201306-citibike-tripdata.csv):qk]</rows>
+        <cols>[federated.1wyyrio0r7zx9v178951i0xhitr7].[avg:end station longitude (201306-citibike-tripdata.csv):qk]</cols>
       </table>
       <simple-id uuid='{D571333A-CD5C-4378-B36A-10817EACCFA3}' />
     </worksheet>
@@ -827,19 +846,9 @@
                 <story-points>
                   <story-point caption='Further Look into Trip Duration vs Birth year' captured-sheet='Further Look into Trip Duration vs Birth year' id='3' />
                   <story-point caption='Trip Duration vs Birth year' captured-sheet='Trip Duration vs Birth Year' id='2' />
-                  <story-point caption='Start and End Station By UserType' captured-sheet='Start and End Station by Birth Year' id='1'>
-                    <currentDeltas>
-                      <worksheet name='Start and End Station by Birth Year'>
-                        <style delta-type='added'>
-                          <style-rule element='axis'>
-                            <encoding attr='space' class='0' field='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:start station latitude:qk]' field-type='quantitative' max='4982111.9306533867' min='4955501.2446486512' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
-                            <encoding attr='space' class='0' field='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:start station longitude:qk]' field-type='quantitative' max='-8224405.2476289924' min='-8259743.303777637' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-                          </style-rule>
-                        </style>
-                      </worksheet>
-                    </currentDeltas>
+                  <story-point caption='Start and End Station By UserType' captured-sheet='Start and End Station by Birth Year-2013' id='1'>
                     <capturedDeltas>
-                      <worksheet name='Start and End Station by Birth Year'>
+                      <worksheet name='Start and End Station by Birth Year-2013'>
                         <style delta-type='added'>
                           <style-rule element='axis'>
                             <encoding attr='space' class='0' field='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:start station latitude:qk]' field-type='quantitative' max='4984364.7744982028' min='4925998.0018125502' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
@@ -865,7 +874,7 @@
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='0.833333' source-height='30'>
-    <window class='worksheet' maximized='true' name='Start and End Station by Birth Year'>
+    <window class='worksheet' name='Start and End Station by Birth Year-2013'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -887,14 +896,37 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='1' param='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:birth year:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1wyyrio0r7zx9v178951i0xhitr7].[none:birth year (201306-citibike-tripdata.csv):qk]' type='color' />
           </strip>
         </edge>
       </cards>
       <viewpoint>
-        <default-map-tool-selection tool='1' />
+        <default-map-tool-selection tool='2' />
       </viewpoint>
       <simple-id uuid='{33980ABE-0B48-415A-8E91-3E04AAD995BA}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0DCC2726-F55E-4456-91E3-87769B98F046}' />
     </window>
     <window class='worksheet' name='Trip Duration vs Birth Year'>
       <cards>
@@ -919,7 +951,7 @@
       </cards>
       <simple-id uuid='{F84DE68B-39F3-4115-AC0B-77E684E12A6F}' />
     </window>
-    <window class='dashboard' name='CitiBike StoryBoard'>
+    <window class='dashboard' maximized='true' name='CitiBike StoryBoard'>
       <viewpoints />
       <active id='5' />
       <simple-id uuid='{12326575-610B-4BD7-8AEE-D29E1AE77A33}' />
