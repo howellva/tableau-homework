@@ -1,3 +1,3 @@
 # tableau-homework
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/howellva/tableau-homework/blob/main/images/lat_long-usertype.PNG)
