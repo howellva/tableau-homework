@@ -37,4 +37,6 @@ https://public.tableau.com/profile/vanessa.howell#!/vizhome/TableauCitiBike_1613
 
 ![Birth Year](https://github.com/howellva/tableau-homework/blob/main/images/Age.png)
 
-How does the average trip duration change by age?
+How does the average trip duration change by age? 
+
+Something I noticed right away with this data was the presence of an outlier. There are 25 people who claimed to be born in 1888 which would be impossible. There may be something wrong in the way that this data was collected. The peak riders are those born in the late 80s (millenials).
