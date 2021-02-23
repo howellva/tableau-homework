@@ -18,7 +18,13 @@ https://public.tableau.com/profile/vanessa.howell#!/vizhome/TableauCitiBike-Age/
 
 Today, what are the most popular and least popular stations in the city for ending a journey?  
 
-At first, I wanted to take an upper level look to see where all of the end stations are and get a visual representation at what this looks like. 
+At first, I wanted to take an upper level look to see where all of the end stations are and get a visual representation at what this looks like.  
+
+The next thing to look at was to identify exactly what were the most popular and least popular cities by filtering through the data. 
+
+Although having the names of these stations is useful, understanding where they are was the logical next step.  
+
+It can be seen that, the most popular end stations were in Jersey City and the least popular were mostly in Manhattan. Perhaps this has something to do with the direction of the commute to work?
 
 
 
