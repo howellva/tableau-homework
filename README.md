@@ -14,7 +14,7 @@ StoryBoard: https://public.tableau.com/profile/vanessa.howell#!/vizhome/TableauC
 
 https://public.tableau.com/profile/vanessa.howell#!/vizhome/TableauCitiBike-Age/Stations?publish=yes
 
-![alt text](https://github.com/howellva/tableau-homework/blob/main/images/Stations.png) 
+![dashboard stations](https://github.com/howellva/tableau-homework/blob/main/images/Stations.png) 
 
 Today, what are the most popular and least popular stations in the city for ending a journey?  
 
