@@ -14,8 +14,15 @@ StoryBoard: https://public.tableau.com/profile/vanessa.howell#!/vizhome/TableauC
 
 https://public.tableau.com/profile/vanessa.howell#!/vizhome/TableauCitiBike-Age/Stations?publish=yes
 
+![alt text](https://github.com/howellva/tableau-homework/blob/main/images/Stations.png) 
 
-![alt text](https://github.com/howellva/tableau-homework/blob/main/images/Stations.png)
+Today, what are the most popular and least popular stations in the city for ending a journey?  
+
+At first, I wanted to take an upper level look to see where all of the end stations are and get a visual representation at what this looks like. 
+
+
+
+
 _________________________________________________________________________________________________________________
 https://public.tableau.com/profile/vanessa.howell#!/vizhome/TableauCitiBike_16139497654270/Stations
 
